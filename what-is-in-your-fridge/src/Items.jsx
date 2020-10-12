@@ -5,7 +5,7 @@ function Items(props) {
   const [item, setItem] = useState("");
   const [quantity, setQuantity] = useState("");
   const [purchaseDate, setPurchaseDate] = useState("");
-  const [expirationDate, setexpirationDate] = useState("");
+  const [expirationDate, setExpirationDate] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,7 +15,7 @@ function Items(props) {
       purchaseDate,
       expirationDate,
     };
-    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/recipes`;
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/fridge`;
     await axios.post(
       airtableURL,
       { fields },
@@ -51,7 +51,7 @@ function Items(props) {
       <input
         type="text"
         value={expirationDate}
-        onChange={(e) => setexpirationDate(e.target.value)}
+        onChange={(e) => setExpirationDate(e.target.value)}
       />
       <button type="submit">Submit</button>
     </form>
