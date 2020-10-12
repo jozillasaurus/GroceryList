@@ -1,10 +1,11 @@
 import React from "react";
+
 import { useParams } from "react-router-dom";
 
 function List(props) {
   const params = useParams();
 
-  const thing = props.fridge.find((r) => r.id === params.id);
+  const thing = props.item.find((r) => r.id === params.id);
 
   if (!thing) {
     return <h4>Loading...</h4>;

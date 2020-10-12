@@ -25,10 +25,15 @@ function App() {
     <div className="App">
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/item/:id">Fridge</Link>
+        <Link to="/fridge">Fridge</Link>
         <Link to="/new">Add Item</Link>
       </nav>
       <Route exact path="/">
+        <div>
+          <h2>Home</h2>
+        </div>
+      </Route>
+      <Route path="/fridge">
         <div>
           {fridge.map((item) => (
             <Link to={`/item/${item.id}`}>{item.fields.item}</Link>
