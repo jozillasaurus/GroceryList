@@ -25,6 +25,7 @@ function App() {
     <div className="App">
       <nav>
         <Link to="/">Home</Link>
+        <Link to="/item/:id">Fridge</Link>
         <Link to="/new">Add Item</Link>
       </nav>
       <Route exact path="/">
