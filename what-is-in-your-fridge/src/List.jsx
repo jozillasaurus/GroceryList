@@ -14,9 +14,9 @@ function List(props) {
   return (
     <div>
       <h3>{thing.fields.item}</h3>
-      <h4>{thing.fields.quantity}</h4>
-      <h5>{thing.fields.purchaseDate}</h5>
-      <h6>{thing.fields.expirationDate}</h6>
+      <h4>Quantity:{thing.fields.quantity}</h4>
+      <h5>Date of Purchase:{thing.fields.purchaseDate}</h5>
+      <h6>Expiration Date:{thing.fields.expirationDate}</h6>
     </div>
   );
 }

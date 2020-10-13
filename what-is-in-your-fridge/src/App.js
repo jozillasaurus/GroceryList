@@ -23,16 +23,15 @@ function App() {
 
   return (
     <div className="App">
+      <div>
+        <h2>What's in your Fridge?</h2>
+      </div>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/fridge">Fridge</Link>
         <Link to="/new">Add Item</Link>
       </nav>
-      <Route exact path="/">
-        <div>
-          <h2>Home</h2>
-        </div>
-      </Route>
+      <Route exact path="/"></Route>
       <Route path="/fridge">
         <div>
           {fridge.map((item) => (
