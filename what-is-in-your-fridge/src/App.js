@@ -7,6 +7,7 @@ import "./App.css";
 
 function App() {
   const [fridge, setFridge] = useState([]);
+  const [fetchFridge, setFetchFridge] = useState(false);
 
   useEffect(() => {
     const getFridge = async () => {
@@ -19,14 +20,14 @@ function App() {
       setFridge(response.data.records);
     };
     getFridge();
-  }, []);
+  }, [fetchFridge]);
 
   return (
     <div className="App">
       <div>
-        <h2>What's in your Fridge?</h2>
+        <h2 id="head">What's in your Fridge?</h2>
       </div>
-      <nav>
+      <nav className="Nav">
         <Link to="/">Home</Link>
         <Link to="/fridge">Fridge</Link>
         <Link to="/new">Add Item</Link>
@@ -35,7 +36,9 @@ function App() {
       <Route path="/fridge">
         <div>
           {fridge.map((item) => (
-            <Link to={`/item/${item.id}`}>{item.fields.item}</Link>
+            <Link id="gl" key={item.id} to={`/item/${item.id}`}>
+              {item.fields.item}
+            </Link>
           ))}
         </div>
       </Route>
@@ -43,7 +46,7 @@ function App() {
         <Items />
       </Route>
       <Route path="/item/:id">
-        <List item={fridge} />
+        <List item={fridge} setFetchFridge={setFetchFridge} />
       </Route>
     </div>
   );
