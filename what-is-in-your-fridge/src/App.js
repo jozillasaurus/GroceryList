@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Items from "./Items";
+import Fridge from "./Fridge";
 import List from "./List";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import "./App.css";
 
 function App() {
@@ -27,20 +30,10 @@ function App() {
       <div>
         <h2 id="head">What's in your Fridge?</h2>
       </div>
-      <nav className="Nav">
-        <Link to="/">Home</Link>
-        <Link to="/fridge">Fridge</Link>
-        <Link to="/new">Add Item</Link>
-      </nav>
+      <Navbar />
       <Route exact path="/"></Route>
       <Route path="/fridge">
-        <div>
-          {fridge.map((item) => (
-            <Link id="gloo" key={item.id} to={`/item/${item.id}`}>
-              {item.fields.item}
-            </Link>
-          ))}
-        </div>
+        <Fridge fridge={fridge} />
       </Route>
       <Route path="/new">
         <Items />
@@ -48,6 +41,7 @@ function App() {
       <Route path="/item/:id">
         <List item={fridge} setFetchFridge={setFetchFridge} />
       </Route>
+      <Footer />
     </div>
   );
 }
