@@ -29,7 +29,7 @@ function List(props) {
   }
 
   return (
-    <div>
+    <div className="pizza">
       <h3>{thing.fields.item}</h3>
       <h4>Quantity:{thing.fields.quantity}</h4>
       <h5>Date of Purchase:{thing.fields.purchaseDate}</h5>

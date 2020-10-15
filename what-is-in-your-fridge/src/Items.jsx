@@ -28,7 +28,7 @@ function Items(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="pepperoni" onSubmit={handleSubmit}>
       <label htmlFor="">Item</label>
       <input
         type="text"
@@ -53,7 +53,9 @@ function Items(props) {
         value={expirationDate}
         onChange={(e) => setExpirationDate(e.target.value)}
       />
-      <button type="submit">Submit</button>
+      <button className="wax" type="submit">
+        Submit
+      </button>
     </form>
   );
 }
