@@ -36,7 +36,7 @@ function App() {
       <Route path="/fridge">
         <div>
           {fridge.map((item) => (
-            <Link id="gl" key={item.id} to={`/item/${item.id}`}>
+            <Link id="gloo" key={item.id} to={`/item/${item.id}`}>
               {item.fields.item}
             </Link>
           ))}

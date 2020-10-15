@@ -22,7 +22,7 @@ function List(props) {
       props.setFetchFridge((prevFetchFridge) => !prevFetchFridge);
       setDeleted(false);
       history.push("/fridge");
-    }, 2000);
+    }, 1000);
   };
   if (!thing) {
     return <h4>Loading...</h4>;
