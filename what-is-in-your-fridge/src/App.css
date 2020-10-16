@@ -28,9 +28,18 @@
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
-.Nav a:link {
+a {
+  color: black !important;
   text-decoration: none;
 }
+/* a:visited {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+} */
 
 #gloo {
   display: grid;
