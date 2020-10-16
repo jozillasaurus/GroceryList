@@ -7,7 +7,7 @@
   background-position: center;
   min-height: 125vh;
 }
-
+/* googled how to do borders on letters thats carries all the way down to other classes and id */
 #head {
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
   font-size: 60px;
 }
-
+/* used soleil's example she gave us to figure howw to implement it into my nav, items, add items */
 .Nav {
   display: grid;
   width: 900px;
@@ -71,7 +71,7 @@ a:link {
   text-align: center;
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
-/* done */
+/* done  googled button designs and coded off from there to get the bbutton how i wanted*/
 .wax {
   font-family: "Caveat", cursive;
   width: 70px;
@@ -115,7 +115,7 @@ p {
   width: 100%;
   text-align: center;
 }
-
+/* used soleil's example she gave us and tried to make it work */
 @media screen and (max-width: 700px) {
   .Nav {
     grid-template-columns: 1fr;

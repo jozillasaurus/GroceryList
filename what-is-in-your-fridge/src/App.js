@@ -7,7 +7,8 @@ import List from "./List";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "./App.css";
-
+// soleil helped me with creating more components, delete button, the refresh component when deleting an item,
+//adjusting the id and classname when i had issues styling in css/gridbox
 function App() {
   const [fridge, setFridge] = useState([]);
   const [fetchFridge, setFetchFridge] = useState(false);
