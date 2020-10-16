@@ -2,7 +2,7 @@
 
 ## Project Name
 
-What is in your Fridge?
+[What is in your Fridge?](https://pensive-goldstine-9b6e12.netlify.app)
 
 ## Project Description
 
@@ -37,21 +37,18 @@ Lets you make a list of groceries you just bought and put the quantity of, bough
 
 #### MVP
 
-- Navigation bar- to the Home page / fridge / freezer /grocery list / add item
-- home page that gives 2-3 options: fridge / freezer / grocery list
+- Navigation bar- to the Home page / fridge / add item
+- home page that gives 2-3 options: fridge / add item
 - a add function that adds items as you put them in the fridge or freezer(to and from airtable) by item name, quantity, date of purchase, and expiration date
 - delete button for items that have expired or completely used
 
 #### PostMVP
 
+- Freezer section
 - item details (when clicked on item details pop open)
 - Grocery List- can create a list to add groceries that are needed and delete when bought
 
 ## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 | Day        | Deliverable                                                                   | Status     |
 | ---------- | ----------------------------------------------------------------------------- | ---------- |
@@ -66,25 +63,20 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle. You have limited time to code all phases of the game. Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component                                                | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| base strucure build                                      |    H     |      3hrs      |      hrs      |     hrs     |
-| Nav bar / fridge and freezer components                  |    H     |      3hrs      |      hrs      |     hrs     |
-| Create Item component / render info to and from airtable |    H     |      3hrs      |      hrs      |     hrs     |
-| Create delete button with function                       |    H     |      3hrs      |      hrs      |     hrs     |
-| Debugging Day /                                          |    H     |      3hrs      |      hrs      |     hrs     |
-| Start CSS                                                |    H     |      3hrs      |      hrs      |     hrs     |
-| CSS                                                      |    H     |      3hrs      |      hrs      |     hrs     |
-| CSS                                                      |    H     |      3hrs      |      hrs      |     hrs     |
-| CSS                                                      |    H     |      3hrs      |      hrs      |     hrs     |
-| CSS                                                      |    H     |      3hrs      |      hrs      |     hrs     |
-| Post MVP                                                 |    H     |      3hrs      |      hrs      |     hrs     |
-| Working with API                                         |    H     |      3hrs      |      hrs      |     hrs     |
-| Total                                                    |    H     |     24hrs      |      hrs      |     hrs     |
+| base strucure build                                      |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Nav bar / fridge and freezer components                  |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Create Item component / render info to and from airtable |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Create delete button with function                       |    H     |      3hrs      |     1hrs      |    1hrs     |
+| Debugging Day /                                          |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Start CSS                                                |    H     |      3hrs      |     3hrs      |    3hrs     |
+| CSS                                                      |    H     |      3hrs      |     3hrs      |    3hrs     |
+| CSS                                                      |    H     |      3hrs      |     3hrs      |    3hrs     |
+| CSS                                                      |    H     |      3hrs      |     3hrs      |    3hrs     |
+| CSS                                                      |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Post MVP                                                 |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Total                                                    |    H     |     33hrs      |     29hrs     |    29hrs    |
 
 ## SWOT Analysis
 

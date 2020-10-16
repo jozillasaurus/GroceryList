@@ -35,7 +35,7 @@ function List(props) {
       <h4>Quantity:{thing.fields.quantity}</h4>
       <h5>Date of Purchase:{thing.fields.purchaseDate}</h5>
       <h6>Expiration Date:{thing.fields.expirationDate}</h6>
-      <button onClick={() => handleDelete(thing.id)}>
+      <button className="wax2" onClick={() => handleDelete(thing.id)}>
         {deleted ? "Deleted" : "Delete"}
       </button>
     </div>
