@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <h7>AppleHut Jr. inc.</h7>
+      <p>AppleHut Jr. inc.</p>
     </div>
   );
 }
